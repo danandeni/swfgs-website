@@ -1,0 +1,20 @@
+{
+  "name": "SWF Garden Services",
+  "short_name": "SWF Gardens",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffdf7",
+  "theme_color": "#003d22",
+  "icons": [
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
