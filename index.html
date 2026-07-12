@@ -3,15 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#173f2b" />
+  <meta name="theme-color" content="#003d22" />
 
   <title>SWF Garden Services | Local Garden Care in South Woodham Ferrers</title>
   <meta
     name="description"
-    content="Affordable local lawn cutting, hedge trimming, garden tidy-ups and drone photography in South Woodham Ferrers."
+    content="Affordable local lawn cutting, accessible hedge trimming, garden tidy-ups and drone photography in South Woodham Ferrers."
   />
 
   <link rel="canonical" href="https://swfgs.co.uk/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700;800;900&family=Yellowtail&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
@@ -19,21 +25,14 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="SWF Garden Services home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" role="img">
-            <path d="M13 49c7-18 18-28 36-34-2 16-10 28-27 34H13Z" fill="currentColor"/>
-            <path d="M17 49c9-10 18-18 29-25" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <span class="brand-copy">
-          <strong>SWF</strong>
-          <small>Garden Services</small>
-        </span>
+        <span class="brand-swf">SWF</span>
+        <span class="brand-leaf" aria-hidden="true"></span>
+        <span class="brand-name">Garden Services</span>
       </a>
 
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#services">Services</a>
-        <a href="#prices">Prices</a>
+        <a href="#why-us">Why SWF?</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -44,16 +43,25 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-shape hero-shape-one" aria-hidden="true"></div>
-      <div class="hero-shape hero-shape-two" aria-hidden="true"></div>
-
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">South Woodham Ferrers</p>
-          <h1>Affordable, reliable <span>garden care.</span></h1>
+          <p class="location-kicker">South Woodham Ferrers</p>
+
+          <div class="hero-logo" aria-label="SWF Garden Services">
+            <span class="hero-logo-swf">SWF</span>
+            <span class="hero-logo-leaf" aria-hidden="true"></span>
+            <span class="hero-logo-name">Garden Services</span>
+          </div>
+
+          <div class="hero-divider" aria-hidden="true"></div>
+
+          <h1>
+            <span>Affordable, Reliable</span>
+            <em>Garden Care</em>
+          </h1>
+
           <p class="hero-intro">
-            Friendly local help with lawns, accessible hedges, garden tidy-ups
-            and aerial photography.
+            Keeping local gardens looking their best all year round.
           </p>
 
           <div class="hero-actions">
@@ -66,274 +74,296 @@
               target="_blank"
               rel="noreferrer"
             >
-              Message on WhatsApp
+              WhatsApp
             </a>
           </div>
-
-          <ul class="hero-points" aria-label="Key benefits">
-            <li>Battery-powered equipment</li>
-            <li>Equipment provided</li>
-            <li>Price agreed before work</li>
-          </ul>
         </div>
 
-        <div class="hero-visual" aria-label="Garden services illustration">
-          <div class="sun" aria-hidden="true"></div>
-
-          <div class="hero-badge">
-            <strong>Local</strong>
-            <span>Friendly service</span>
-          </div>
-
-          <div class="garden-scene" aria-hidden="true">
-            <div class="tree tree-one"></div>
-            <div class="tree tree-two"></div>
-            <div class="hedge"></div>
-            <div class="lawn-lines"></div>
-
-            <div class="mower">
-              <div class="mower-handle"></div>
-              <div class="mower-body">
-                <span>SWF</span>
-              </div>
-              <div class="wheel wheel-one"></div>
-              <div class="wheel wheel-two"></div>
-            </div>
+        <div class="hero-photo-wrap">
+          <img
+            class="hero-photo"
+            src="/images/hero-garden.webp"
+            alt="A freshly striped lawn with a battery-powered Ryobi lawn mower"
+            width="900"
+            height="1288"
+          />
+          <div class="ribbon" aria-label="Friendly local service">
+            <span class="ribbon-leaves" aria-hidden="true">❧</span>
+            <strong>Friendly</strong>
+            <strong class="lime">Local</strong>
+            <strong>Service</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="trust-strip" aria-label="Why choose SWF Garden Services">
-      <div>
-        <span class="trust-icon" aria-hidden="true">⚡</span>
-        <strong>Quiet equipment</strong>
-        <small>Battery powered where possible</small>
-      </div>
-      <div>
-        <span class="trust-icon" aria-hidden="true">✓</span>
-        <strong>Reliable service</strong>
-        <small>Clear arrangements and quotes</small>
-      </div>
-      <div>
-        <span class="trust-icon" aria-hidden="true">⌂</span>
-        <strong>Truly local</strong>
-        <small>Based in South Woodham Ferrers</small>
-      </div>
-      <div>
-        <span class="trust-icon" aria-hidden="true">✦</span>
-        <strong>Left tidy</strong>
-        <small>Paths and working areas swept</small>
-      </div>
+    <section class="benefit-strip" aria-label="Service benefits">
+      <article>
+        <span class="benefit-icon" aria-hidden="true">⚡</span>
+        <div>
+          <strong>Battery powered</strong>
+          <small>Quiet and eco-friendly</small>
+        </div>
+      </article>
+      <article>
+        <span class="benefit-icon" aria-hidden="true">🛠</span>
+        <div>
+          <strong>Equipment provided</strong>
+          <small>No hassle for you</small>
+        </div>
+      </article>
+      <article>
+        <span class="benefit-icon" aria-hidden="true">♻</span>
+        <div>
+          <strong>Waste handled</strong>
+          <small>Working areas left tidy</small>
+        </div>
+      </article>
+      <article>
+        <span class="benefit-icon" aria-hidden="true">☺</span>
+        <div>
+          <strong>Friendly &amp; reliable</strong>
+          <small>Clear arrangements</small>
+        </div>
+      </article>
     </section>
 
-    <section class="section services-section" id="services">
-      <div class="section-heading">
-        <p class="eyebrow">What we do</p>
-        <h2>Simple help to keep your garden looking its best</h2>
-        <p>
-          Tell us what needs doing and we will agree the work and price before
-          starting.
-        </p>
+    <section class="services-section" id="services">
+      <div class="section-title">
+        <span aria-hidden="true"></span>
+        <div>
+          <p>Services &amp; guide prices</p>
+          <h2>What can we help with?</h2>
+        </div>
+        <span aria-hidden="true"></span>
       </div>
 
       <div class="service-grid">
-        <article class="service-card featured">
-          <div class="service-icon" aria-hidden="true">✂</div>
-          <p class="service-kicker">Most popular</p>
-          <h3>Lawn cutting</h3>
-          <p>
-            Regular or one-off grass cutting, with edging and a general tidy-up
-            included.
-          </p>
-          <ul>
-            <li>Small, medium and larger lawns</li>
-            <li>One-off or repeat visits</li>
-            <li>Overgrown lawns quoted separately</li>
-          </ul>
-          <div class="price-line">
-            <span>From</span>
-            <strong>£10</strong>
+        <article class="service-card">
+          <header class="service-card-header">
+            <span class="service-round-icon" aria-hidden="true">♒</span>
+            <h3>Lawn cutting</h3>
+          </header>
+          <img
+            src="/images/lawn-cutting.webp"
+            alt="Freshly cut striped lawn"
+            width="1200"
+            height="340"
+          />
+          <div class="service-body">
+            <div class="service-price-row">
+              <span>Small lawns</span>
+              <strong><small>from</small> £10</strong>
+            </div>
+            <div class="service-price-row">
+              <span>Medium lawns</span>
+              <strong><small>from</small> £15</strong>
+            </div>
+            <div class="service-price-row">
+              <span>Large lawns</span>
+              <strong><small>from</small> £25</strong>
+            </div>
+            <div class="service-price-row">
+              <span>Overgrown gardens</span>
+              <strong>Quoted</strong>
+            </div>
           </div>
+          <footer class="service-card-footer">
+            <span aria-hidden="true">✓</span>
+            Includes edging and a general tidy-up
+          </footer>
         </article>
 
         <article class="service-card">
-          <div class="service-icon" aria-hidden="true">⌁</div>
-          <p class="service-kicker">Neat and manageable</p>
-          <h3>Hedge trimming</h3>
-          <p>
-            Trimming of low, safely accessible hedges. No ladder or high-level
-            work is undertaken.
-          </p>
-          <ul>
-            <li>Light reshaping and maintenance</li>
-            <li>Clippings gathered after work</li>
-            <li>Quote based on length and condition</li>
-          </ul>
-          <div class="price-line">
+          <header class="service-card-header">
+            <span class="service-round-icon" aria-hidden="true">✂</span>
+            <h3>Hedge trimming</h3>
+          </header>
+          <img
+            src="/images/hedge-cutting.webp"
+            alt="A neatly trimmed garden hedge"
+            width="1200"
+            height="356"
+          />
+          <div class="service-body">
+            <div class="service-price-row">
+              <span>Small accessible hedges</span>
+              <strong><small>from</small> £15</strong>
+            </div>
+            <div class="service-price-row">
+              <span>Longer accessible hedges</span>
+              <strong>Quoted</strong>
+            </div>
+            <div class="service-price-row">
+              <span>Light shaping &amp; maintenance</span>
+              <strong>Quoted</strong>
+            </div>
+            <p class="service-small-print">
+              Safely accessible work only — no ladders or high-level cutting.
+            </p>
+          </div>
+          <footer class="service-card-footer">
+            <span aria-hidden="true">✓</span>
+            Price agreed before work starts
+          </footer>
+        </article>
+
+        <article class="service-card">
+          <header class="service-card-header">
+            <span class="service-round-icon" aria-hidden="true">✣</span>
+            <h3>Drone photography</h3>
+          </header>
+          <img
+            src="/images/drone-photography.webp"
+            alt="DJI Mini 2 drone in flight"
+            width="1200"
+            height="368"
+          />
+          <div class="service-body">
+            <div class="service-list-row"><span aria-hidden="true">⌂</span> Roof photographs</div>
+            <div class="service-list-row"><span aria-hidden="true">▰</span> Gutter photographs</div>
+            <div class="service-list-row"><span aria-hidden="true">♣</span> Garden aerial images</div>
+            <div class="service-list-row"><span aria-hidden="true">●</span> Property photography</div>
+            <p class="service-small-print">
+              Visual images only — not a structural or professional survey.
+            </p>
+          </div>
+          <footer class="service-card-footer price-footer">
             <span>From</span>
             <strong>£15</strong>
-          </div>
+          </footer>
         </article>
+      </div>
 
-        <article class="service-card">
-          <div class="service-icon" aria-hidden="true">⌁</div>
-          <p class="service-kicker">Extra help</p>
-          <h3>Garden tidy-ups</h3>
+      <div class="extra-service">
+        <img
+          src="/images/garden-tidy.webp"
+          alt="A neat lawn and garden border"
+          width="900"
+          height="1012"
+        />
+        <div class="extra-service-copy">
+          <p class="small-kicker">Also available</p>
+          <h3>Garden tidy-ups &amp; waste removal</h3>
           <p>
-            Sweeping paths, gathering leaves and helping bring smaller outdoor
-            areas back under control.
+            Path sweeping, leaf collection, loose clipping collection and
+            smaller general garden tidy-up jobs.
           </p>
-          <ul>
-            <li>Path and patio sweeping</li>
-            <li>Leaf and loose clipping collection</li>
-            <li>Small general tidy-up jobs</li>
-          </ul>
-          <div class="price-line">
-            <span>From</span>
-            <strong>£5</strong>
+          <div class="extra-prices">
+            <span>General tidy-up <strong>from £5</strong></span>
+            <span>Waste removal <strong>£5–£15</strong></span>
           </div>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon drone-icon" aria-hidden="true">✣</div>
-          <p class="service-kicker">A different view</p>
-          <h3>Drone photography</h3>
-          <p>
-            Aerial images for gardens, property photographs and basic visual
-            roof or gutter checks.
-          </p>
-          <ul>
-            <li>DJI Mini 2 aerial photography</li>
-            <li>Weather and location permitting</li>
-            <li>Images supplied digitally</li>
-          </ul>
-          <div class="price-line">
-            <span>From</span>
-            <strong>£15</strong>
-          </div>
-          <small class="card-note">
-            Visual imagery only — not a structural or professional survey.
-          </small>
-        </article>
+        </div>
       </div>
     </section>
 
-    <section class="offer-section" id="prices">
-      <div class="offer-card">
-        <div>
-          <p class="eyebrow">Neighbour offer</p>
-          <h2>Book together and both save</h2>
-          <p>
-            Two neighbouring gardens booked for the same visit receive
-            <strong>£5 off each</strong>.
-          </p>
-        </div>
+    <section class="why-section" id="why-us">
+      <div class="why-inner">
+        <div class="why-copy">
+          <div class="section-title light-title">
+            <span aria-hidden="true"></span>
+            <div>
+              <p>Why choose SWF?</p>
+              <h2>Local service you can rely on</h2>
+            </div>
+            <span aria-hidden="true"></span>
+          </div>
 
-        <div class="offer-badge" aria-label="Five pounds off each">
-          <span>Both get</span>
-          <strong>£5 off</strong>
-        </div>
-      </div>
-
-      <div class="price-panel">
-        <div class="price-panel-heading">
-          <div>
-            <p class="eyebrow">Guide prices</p>
-            <h2>Clear pricing, agreed first</h2>
-          </div>
-          <p>
-            Final prices depend on the size, condition, access and amount of
-            work required.
-          </p>
-        </div>
-
-        <div class="price-list">
-          <div>
-            <span>Lawn cutting</span>
-            <strong>from £10</strong>
-          </div>
-          <div>
-            <span>Accessible hedge trimming</span>
-            <strong>from £15</strong>
-          </div>
-          <div>
-            <span>General tidy-up</span>
-            <strong>from £5</strong>
-          </div>
-          <div>
-            <span>Waste removal</span>
-            <strong>£5–£15</strong>
-          </div>
-          <div>
-            <span>Drone photography</span>
-            <strong>from £15</strong>
+          <div class="why-grid">
+            <article>
+              <span aria-hidden="true">🔇</span>
+              <strong>Quiet equipment</strong>
+              <small>Less noise and disruption</small>
+            </article>
+            <article>
+              <span aria-hidden="true">✓</span>
+              <strong>Reliable</strong>
+              <small>We turn up when agreed</small>
+            </article>
+            <article>
+              <span aria-hidden="true">£</span>
+              <strong>Competitive prices</strong>
+              <small>Clear prices and free quotes</small>
+            </article>
+            <article>
+              <span aria-hidden="true">❧</span>
+              <strong>Left clean &amp; tidy</strong>
+              <small>Pride taken in every job</small>
+            </article>
           </div>
         </div>
 
-        <p class="price-note">
-          No surprise charges: the price is agreed before work begins.
-        </p>
+        <aside class="neighbour-card">
+          <p class="script-heading">Neighbour Offer</p>
+          <div class="house-row" aria-hidden="true">
+            <span>🏠</span><span class="fence">╫╫╫</span><span>🏡</span>
+          </div>
+          <p>Book with your neighbour and you will <strong>both</strong> receive</p>
+          <div class="neighbour-discount">£5 OFF</div>
+        </aside>
       </div>
     </section>
 
-    <section class="section gallery-section" id="gallery">
-      <div class="section-heading split-heading">
+    <section class="gallery-section" id="gallery">
+      <div class="section-title">
+        <span aria-hidden="true"></span>
         <div>
-          <p class="eyebrow">Recent work</p>
-          <h2>A growing gallery of local jobs</h2>
+          <p>Recent work</p>
+          <h2>Great gardens, happy neighbours</h2>
         </div>
-        <p>
-          Before-and-after photographs will be added as more gardens are
-          completed.
-        </p>
+        <span aria-hidden="true"></span>
       </div>
 
       <div class="gallery-grid">
-        <article class="gallery-placeholder">
+        <article class="gallery-placeholder lawn-placeholder">
           <span aria-hidden="true">🌱</span>
           <strong>Lawn transformations</strong>
-          <small>Photos coming soon</small>
+          <small>Before-and-after photos coming soon</small>
         </article>
-        <article class="gallery-placeholder">
-          <span aria-hidden="true">✂️</span>
+        <article class="gallery-placeholder hedge-placeholder">
+          <span aria-hidden="true">✂</span>
           <strong>Hedge tidy-ups</strong>
-          <small>Photos coming soon</small>
+          <small>New local jobs will appear here</small>
         </article>
-        <article class="gallery-placeholder">
-          <span aria-hidden="true">🚁</span>
-          <strong>Aerial views</strong>
-          <small>Photos coming soon</small>
+        <article class="gallery-placeholder drone-placeholder">
+          <span aria-hidden="true">✣</span>
+          <strong>Aerial photographs</strong>
+          <small>Drone images coming soon</small>
         </article>
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="contact-card">
-        <div class="contact-copy">
-          <p class="eyebrow">Free, no-obligation quote</p>
-          <h2>Tell us what your garden needs</h2>
-          <p>
-            Send a short description and, where useful, a couple of photographs.
-            We will reply with availability and arrange a quote.
-          </p>
+    <section class="contact-band" id="contact">
+      <div class="contact-inner">
+        <div class="quote-seal">
+          <span>Free</span>
+          <strong>No-obligation</strong>
+          <span>Quotes</span>
         </div>
 
-        <div class="contact-actions">
-          <a class="contact-phone" href="tel:+447907495311">
-            <span>Call or text</span>
-            <strong>07907 495311</strong>
-          </a>
-          <a
-            class="button button-whatsapp"
-            href="https://wa.me/447907495311?text=Hello%20SWF%20Garden%20Services%2C%20please%20could%20I%20have%20a%20quote%3F"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Start a WhatsApp message
-          </a>
+        <div class="contact-main">
+          <p class="contact-script">Call or Text</p>
+          <a href="tel:+447907495311">07907 495311</a>
         </div>
+
+        <ul class="contact-points">
+          <li>No job too small</li>
+          <li>Evening &amp; weekend appointments</li>
+          <li>Free quotations</li>
+          <li>Price agreed before work</li>
+        </ul>
       </div>
+    </section>
+
+    <section class="whatsapp-strip">
+      <p>Send a photo of the garden for a quick first look.</p>
+      <a
+        href="https://wa.me/447907495311?text=Hello%20SWF%20Garden%20Services%2C%20please%20could%20I%20have%20a%20quote%3F"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Message on WhatsApp
+      </a>
     </section>
   </main>
 
