@@ -1,9 +1,81 @@
-<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1424"><meta name="referrer" content="no-referrer"><title>i-Sensor Firmware Updater | F1 Autocentres</title><link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./styles.css"></head><body>
-<header class="top"><div class="wrap head"><div class="brand"><span class="logo">F1</span><div><strong>i-Sensor Updater</strong><small>F1 Autocentres · TPMS equipment</small></div></div><span class="chip">PILOT · SUPERVISED USE ONLY</span></div></header>
-<main class="wrap"><div class="intro"><div><p class="eyebrow">DEVICE MAINTENANCE</p><h1>Keep your i-Sensor up to date.</h1><p>Connect your Autogem i-Sensor, verify compatibility, and install the approved firmware. Keep this window open throughout the update.</p></div><div class="status"><span class="pulse"></span><span>USB update · Chrome / Edge</span></div></div>
-<div class="warning"><strong>⚠ Important — do not disconnect</strong><p>Updating firmware can take 25 minutes or longer. Disconnecting the USB cable, closing the window, restarting the computer or allowing it to sleep may leave the device unusable. This version is for supervised test devices only.</p></div>
-<div class="columns"><div class="maincol">
-<section class="panel"><div class="step"><span class="number">01</span><div><h2>Approved firmware</h2><p>The firmware is downloaded and cryptographically verified before any programming begins.</p></div></div><pre id="prepared" class="readout">Checking approved firmware…</pre><div class="actions"><button id="reload" class="secondary">Check firmware again</button><button id="download" class="secondary" disabled>Save firmware to Downloads</button></div><p class="hint">Saving a copy is optional. The update uses the verified copy already in browser memory.</p></section>
-<section class="panel"><div class="step"><span class="number">02</span><div><h2>Connect & check device</h2><p>Use the USB cable and approve the browser's connection request.</p></div></div><div class="actions"><button id="connect">Connect i-Sensor</button><button id="preflight" disabled class="secondary">Run compatibility check</button></div><pre id="device" class="readout">Not connected.</pre></section>
-<section class="panel"><div class="step"><span class="number">03</span><div><h2>Install firmware</h2><p>Only begin when the device can remain connected until completion.</p></div></div><label class="check"><input id="consent" type="checkbox"> I understand that disconnecting or closing this window during the update could disable the i-Sensor.</label><label class="phrase">Type <code>FLASH TEST DEVICE</code> to unlock this experimental update<input id="phrase" autocomplete="off" placeholder="FLASH TEST DEVICE"></label><button id="flash" disabled class="primary">START FULL LIVE UPDATE</button></section>
-</div><aside class="sidecol"><section class="panel monitor"><div class="monitor-head"><h2>Update progress</h2><strong id="pct">0%</strong></div><progress id="progress" value="0" max="100"></progress><p id="phase">Waiting for device</p><div class="metrics"><div><small>Elapsed</small><strong id="elapsed">0m 00s</strong></div><div><small>Connection</small><strong>Direct USB</strong></div></div><div id="safety" class="activewarning" hidden>⚠ UPDATE IN PROGRESS — DO NOT CLOSE, REFRESH OR UNPLUG.</div></section><section class="panel"><div class="monitor-head"><h2>Activity log</h2><button id="export" class="secondary small">Save log</button></div><pre id="log" class="log"></pre><p class="hint">Logs stay in this browser unless you save them.</p></section></aside></div><footer>i-Sensor firmware maintenance · WebHID · No centre or employee information transmitted to the updater server.</footer></main><script src="./updater.js" defer></script></body></html>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="referrer" content="no-referrer">
+  <title>i-Sensor Firmware Updater | F1 Autocentres</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap head">
+      <div class="brand">
+        <img class="logo" src="./f1-autocentres-logo.webp" alt="Formula One Autocentres" width="62" height="67">
+        <div><strong>i-Sensor Firmware Updater</strong><small>F1 Autocentres · Workshop equipment</small></div>
+      </div>
+      <span class="chip">SUPERVISED PILOT ONLY</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="intro">
+      <div>
+        <h1>Update your i-Sensor</h1>
+        <p>Connect your Autogem i-Sensor using its USB cable. We'll check the device before allowing an update.</p>
+      </div>
+      <div class="status"><span class="pulse"></span>Chrome or Edge · USB connection</div>
+    </div>
+
+    <div class="warning" role="alert">
+      <strong>⚠ IMPORTANT — DO NOT DISCONNECT DURING AN UPDATE</strong>
+      <p>An update can take <b>25 minutes or longer</b>. Do not unplug the device, close or refresh this page, restart the PC, or let the PC go to sleep. Interrupting programming may make the i-Sensor unusable.</p>
+      <p><b>Supervised test devices only.</b> This updater is not yet approved for general centre use.</p>
+    </div>
+
+    <div class="columns">
+      <div class="maincol">
+        <section class="panel">
+          <div class="step"><span class="number">1</span><div><h2>Firmware</h2><p>Approved firmware is downloaded and verified automatically.</p></div></div>
+          <pre id="prepared" class="readout" aria-live="polite">Checking approved firmware…</pre>
+          <div class="actions"><button id="reload" class="secondary">Check firmware again</button><button id="download" class="secondary" disabled>Save firmware to Downloads</button></div>
+          <p class="hint">Saving a separate copy is optional. The updater uses the verified firmware already downloaded.</p>
+        </section>
+
+        <section class="panel">
+          <div class="step"><span class="number">2</span><div><h2>Connect your device</h2><p>Plug in the i-Sensor and allow the browser to connect.</p></div></div>
+          <div class="actions"><button id="connect">Connect i-Sensor</button><button id="preflight" class="secondary" disabled>Run compatibility check</button></div>
+          <pre id="device" class="readout" aria-live="polite">Not connected.</pre>
+        </section>
+
+        <section class="panel install-panel">
+          <div class="step"><span class="number">3</span><div><h2>Install the update</h2><p>Only start when you can leave the device connected until the process finishes.</p></div></div>
+          <label class="check"><input id="consent" type="checkbox"><span>I understand that disconnecting the device or closing this page during programming could make the i-Sensor unusable.</span></label>
+          <label class="phrase" for="phrase">For this supervised pilot, type <code>FLASH TEST DEVICE</code> to enable programming.</label>
+          <input id="phrase" autocomplete="off" placeholder="FLASH TEST DEVICE">
+          <button id="flash" class="primary" disabled>START FULL LIVE UPDATE</button>
+        </section>
+      </div>
+
+      <aside class="sidecol">
+        <section class="panel monitor">
+          <div class="monitor-head"><h2>Update progress</h2><strong id="pct">0%</strong></div>
+          <progress id="progress" value="0" max="100"></progress>
+          <p id="phase" aria-live="polite">Waiting for device</p>
+          <div class="metrics"><div><small>Elapsed time</small><strong id="elapsed">0m 00s</strong></div><div><small>Connection</small><strong>Direct USB</strong></div></div>
+          <div id="safety" class="activewarning" role="alert" hidden>⚠ UPDATE IN PROGRESS — DO NOT CLOSE, REFRESH OR UNPLUG.</div>
+        </section>
+        <section class="panel technical">
+          <div class="monitor-head"><h2>Activity log</h2><button id="export" class="secondary small">Save log</button></div>
+          <p class="hint">For troubleshooting. Logs remain in your browser unless you save them.</p>
+          <pre id="log" class="log" aria-live="off"></pre>
+        </section>
+      </aside>
+    </div>
+    <footer>F1 Autocentres · i-Sensor maintenance · No centre or employee information sent to the updater server.</footer>
+  </main>
+  <script src="./updater.js" defer></script>
+</body>
+</html>
