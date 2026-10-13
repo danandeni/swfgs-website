@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#003d22" />
+
+  <title>SWF Garden Services | Local Garden Care in South Woodham Ferrers</title>
+  <meta
+    name="description"
+    content="Affordable local lawn cutting, accessible hedge trimming, garden tidy-ups and drone photography in South Woodham Ferrers."
+  />
+
+  <link rel="canonical" href="https://swfgs.co.uk/" />
+  <link rel="icon" href="/images/favicon.svg?v=1" type="image/svg+xml" />
+  <link rel="icon" href="/images/favicon-32.png?v=1" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?v=1" />
+  <link rel="manifest" href="/site.webmanifest?v=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700;800;900&family=Yellowtail&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/styles.css?v=5" />
+
+  <script defer src="https://stats.swfgs.co.uk/script.js" data-website-id="6b407285-9080-4f5a-b1f0-a5087197167d"></script>
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="SWF Garden Services home">
+        <img src="/images/swf-logo.svg?v=1" alt="SWF Garden Services" width="360" height="104" />
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why SWF?</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-call" href="tel:+447907495311">
+        <span>Call or text</span>
+        <strong>07907 495311</strong>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="location-kicker">
+            <span aria-hidden="true"></span>
+            South Woodham Ferrers
+          </p>
+
+          <h1 id="hero-title">
+            <span>Affordable garden care.</span>
+            <em>Done properly.</em>
+          </h1>
+
+          <p class="hero-intro">
+            Friendly local help with lawn cutting, accessible hedge trimming,
+            garden tidy-ups and aerial photography.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="tel:+447907495311">
+              Call or text for a quote
+            </a>
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/447907495311?text=Hello%20SWF%20Garden%20Services%2C%20please%20could%20I%20have%20a%20quote%3F"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Message on WhatsApp
+            </a>
+          </div>
+
+          <ul class="hero-points" aria-label="Key benefits">
+            <li>Free quotations</li>
+            <li>Equipment provided</li>
+            <li>Price agreed before work</li>
+          </ul>
+        </div>
+
+        <aside class="hero-price-card" aria-label="Guide prices">
+          <p>Popular services</p>
+          <div>
+            <span>Lawn cutting</span>
+            <strong>from £10</strong>
+          </div>
+          <div>
+            <span>Hedge trimming</span>
+            <strong>from £15</strong>
+          </div>
+          <div>
+            <span>Drone photography</span>
+            <strong>from £15</strong>
+          </div>
+          <small>No job too small. Quotes are free.</small>
+        </aside>
+      </div>
+
+      <div class="hero-bottom">
+        <div>
+          <strong>Quiet equipment</strong>
+          <span>Battery powered where possible</span>
+        </div>
+        <div>
+          <strong>Friendly &amp; reliable</strong>
+          <span>Clear arrangements from the start</span>
+        </div>
+        <div>
+          <strong>Local service</strong>
+          <span>Based in South Woodham Ferrers</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Services &amp; guide prices</p>
+          <h2>Simple, useful help for your garden</h2>
+        </div>
+        <p>
+          Tell us what needs doing. We will agree the work and price before
+          starting, with no hidden surprises.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <img
+            src="/images/lawn-cutting.webp"
+            alt="Freshly cut striped lawn"
+            width="1200"
+            height="340"
+          />
+          <div class="service-card-copy">
+            <header>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M4 17h16M6 17l2-8h8l2 8M9 9V6h6v3M8 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+                </svg>
+              </span>
+              <div>
+                <p>Garden favourite</p>
+                <h3>Lawn cutting</h3>
+              </div>
+            </header>
+
+            <div class="price-list">
+              <div><span>Small lawns</span><strong><small>from</small> £10</strong></div>
+              <div><span>Medium lawns</span><strong><small>from</small> £15</strong></div>
+              <div><span>Large lawns</span><strong><small>from</small> £25</strong></div>
+              <div><span>Overgrown gardens</span><strong>Quoted</strong></div>
+            </div>
+
+            <footer><span>✓</span> Edging and a general tidy-up included</footer>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            src="/images/hedge-cutting.webp"
+            alt="A neatly trimmed garden hedge"
+            width="1200"
+            height="356"
+          />
+          <div class="service-card-copy">
+            <header>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M8 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm14 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM7 10l10 4M7 14l10-4M5 11v2" />
+                </svg>
+              </span>
+              <div>
+                <p>Neat and manageable</p>
+                <h3>Hedge trimming</h3>
+              </div>
+            </header>
+
+            <div class="price-list">
+              <div><span>Small accessible hedges</span><strong><small>from</small> £15</strong></div>
+              <div><span>Longer accessible hedges</span><strong>Quoted</strong></div>
+              <div><span>Light shaping &amp; maintenance</span><strong>Quoted</strong></div>
+            </div>
+
+            <p class="small-print">
+              Safely accessible work only — no ladders or high-level cutting.
+            </p>
+
+            <footer><span>✓</span> Price agreed before work starts</footer>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            src="/images/drone-photography.webp"
+            alt="DJI Mini 2 drone in flight"
+            width="1200"
+            height="368"
+          />
+          <div class="service-card-copy">
+            <header>
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M7 9h10l2 3-2 3H7l-2-3 2-3Zm5 0V6M9 6h6M5 7H2M22 7h-3M5 17H2M22 17h-3" />
+                </svg>
+              </span>
+              <div>
+                <p>Useful aerial images</p>
+                <h3>Drone photography</h3>
+              </div>
+            </header>
+
+            <ul class="feature-list">
+              <li>Roof photographs</li>
+              <li>Gutter photographs</li>
+              <li>Garden aerial images</li>
+              <li>Property photography</li>
+            </ul>
+
+            <p class="small-print">
+              Visual images only — not a structural or professional survey.
+            </p>
+
+            <footer class="price-footer"><span>Guide price</span><strong>from £15</strong></footer>
+          </div>
+        </article>
+      </div>
+
+      <div class="extra-service">
+        <div class="extra-service-copy">
+          <p class="eyebrow">Also available</p>
+          <h3>Garden tidy-ups &amp; waste removal</h3>
+          <p>
+            Path sweeping, leaf collection, loose clipping collection and
+            smaller general garden tidy-up jobs.
+          </p>
+        </div>
+        <div class="extra-prices">
+          <div><span>General tidy-up</span><strong>from £5</strong></div>
+          <div><span>Waste removal</span><strong>£5–£15</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section" id="why-us">
+      <div class="why-inner">
+        <div class="why-copy">
+          <p class="eyebrow light">Why choose SWF?</p>
+          <h2>Local service without the fuss</h2>
+          <p class="why-intro">
+            Straightforward garden care, clear prices and pride in leaving the
+            working area tidy.
+          </p>
+
+          <div class="why-grid">
+            <article>
+              <span>01</span>
+              <strong>Quiet equipment</strong>
+              <small>Battery powered where possible</small>
+            </article>
+            <article>
+              <span>02</span>
+              <strong>Reliable service</strong>
+              <small>Clear arrangements and quotes</small>
+            </article>
+            <article>
+              <span>03</span>
+              <strong>Competitive prices</strong>
+              <small>Useful guide prices upfront</small>
+            </article>
+            <article>
+              <span>04</span>
+              <strong>Left clean &amp; tidy</strong>
+              <small>Pride taken in every job</small>
+            </article>
+          </div>
+        </div>
+
+        <aside class="neighbour-card">
+          <p class="neighbour-script">Neighbour offer</p>
+          <h3>Book together.<br />Both save.</h3>
+          <p>
+            Two neighbouring gardens completed on the same visit receive
+            <strong>£5 off each.</strong>
+          </p>
+          <div class="neighbour-discount">£5 OFF EACH</div>
+          <small>Subject to both jobs being booked for the same visit.</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Recent work</p>
+          <h2>Great gardens. Happy neighbours.</h2>
+        </div>
+        <p>
+          Before-and-after photographs will be added as more local jobs are
+          completed.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-card lawn-gallery">
+          <div>
+            <span>Coming soon</span>
+            <strong>Lawn transformations</strong>
+          </div>
+        </article>
+        <article class="gallery-card hedge-gallery">
+          <div>
+            <span>Coming soon</span>
+            <strong>Hedge tidy-ups</strong>
+          </div>
+        </article>
+        <article class="gallery-card drone-gallery">
+          <div>
+            <span>Coming soon</span>
+            <strong>Aerial photographs</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow light">Free, no-obligation quote</p>
+          <h2>Send a photo and tell us what needs doing.</h2>
+          <p>
+            A couple of photographs can help with a quick first look. We will
+            reply with availability and arrange a quote.
+          </p>
+
+          <ul>
+            <li>No job too small</li>
+            <li>Evening &amp; weekend appointments</li>
+            <li>Price agreed before work</li>
+          </ul>
+        </div>
+
+        <div class="contact-actions">
+          <span>Call or text</span>
+          <a class="contact-number" href="tel:+447907495311">07907 495311</a>
+          <a
+            class="contact-whatsapp"
+            href="https://wa.me/447907495311?text=Hello%20SWF%20Garden%20Services%2C%20please%20could%20I%20have%20a%20quote%3F"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="footer-brand" href="#top">SWF Garden Services</a>
+        <p>Local garden care in South Woodham Ferrers.</p>
+      </div>
+      <div class="footer-right">
+        <a href="tel:+447907495311">07907 495311</a>
+        <span>© <span id="year">2026</span> SWF Garden Services</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
