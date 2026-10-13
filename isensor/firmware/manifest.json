@@ -2,7 +2,7 @@
   "schema": 1,
   "approved": true,
   "version": "V5.4 / database 1.73 (July 2026)",
-  "file": "./firmware/Autogem_Combo_Master_V5.4_1.73_2026_07.hex",
+  "file": "./firmware/Autogem_Combo_Master_V5.4_1.73@2026_07.hex",
   "sha256": "13737a0576ae9f7e81750094ce256d573a74fc9377071aed9eef667a428976fa",
   "notes": "Validated experimental reference firmware; new versions require compatibility testing"
 }
