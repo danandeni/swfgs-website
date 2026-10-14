@@ -1,38 +1,13 @@
 <!doctype html>
-<html lang="en-GB">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#ffffff">
-<meta name="referrer" content="no-referrer">
-<title>i-Sensor Firmware Updater | F1 Autocentres</title>
-<link rel="manifest" href="./manifest.webmanifest">
-<link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-<header class="top"><div class="wrap head">
-<div class="brand"><img class="logo" src="./f1-autocentres-logo.webp" alt="F1 Autocentres" width="62" height="67"><div><strong>i-Sensor Firmware Updater</strong><small>F1 Autocentres · Workshop equipment</small></div></div>
-<span class="chip">SUPERVISED PILOT ONLY</span>
-</div></header>
-<main class="wrap">
-<div class="intro"><div><h1>Update your i-Sensor</h1><p>Three simple steps to update your workshop device safely.</p></div><span class="browser">Chrome or Edge · USB required</span></div>
-<div class="steps" aria-label="Update steps">
-<section class="step-card"><span class="step-number">1</span><div><h2>Verify firmware</h2><p>Downloaded automatically and checked for integrity</p></div></section>
-<section class="step-card"><span class="step-number">2</span><div><h2>Connect device</h2><p>Connect via USB and run the compatibility check</p></div></section>
-<section class="step-card"><span class="step-number">3</span><div><h2>Install update</h2><p>Confirm the warning and start programming</p></div></section>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><title>i-Sensor Firmware Updater | F1 Autocentres</title><link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./styles.css"></head>
+<body><header class="top"><div class="wrap head"><div class="brand"><img class="logo" src="./f1-autocentres-logo.webp" alt="F1 Autocentres" width="62" height="67"><div><strong>i-Sensor Firmware Updater</strong><small>F1 Autocentres · Workshop equipment</small></div></div><span class="chip">SUPERVISED PILOT ONLY</span></div></header>
+<main class="wrap"><div class="intro"><div><h1>Update your i-Sensor</h1><p>Work through the three steps below to install the approved firmware.</p></div><span class="browser">Chrome or Edge · USB required</span></div>
+<div class="workflow">
+<section class="panel step-card"><div class="step-title"><span class="step-number">1</span><div><h2>Verify firmware</h2><p>Automatically downloaded and verified</p></div></div><pre id="prepared" class="readout" aria-live="polite">Checking approved firmware…</pre><div class="step-actions"><button id="reload" class="secondary">Check firmware again</button></div></section>
+<section class="panel step-card"><div class="step-title"><span class="step-number">2</span><div><h2>Connect device</h2><p>Connect the i-Sensor via USB</p></div></div><div class="step-actions connect-actions"><button id="connect">Connect i-Sensor</button><button id="preflight" class="secondary" disabled>Run compatibility check</button></div><pre id="device" class="readout" aria-live="polite">Not connected.</pre></section>
+<section class="panel step-card"><div class="step-title"><span class="step-number">3</span><div><h2>Install update</h2><p>Ready once firmware and device pass checks</p></div></div><label class="check"><input id="consent" type="checkbox"><span>I understand that disconnecting or closing this page during programming could make the i-Sensor unusable.</span></label><div class="step-actions"><button id="flash" class="primary" disabled>START FIRMWARE UPDATE</button></div><p class="hint">A final warning will appear before any erase begins.</p></section>
 </div>
-<div class="warning" role="alert"><strong>⚠ IMPORTANT — DO NOT DISCONNECT DURING AN UPDATE</strong><p>Programming may take <b>25 minutes or longer</b>. Do not unplug the i-Sensor, close or refresh this page, restart the PC, or allow the PC to sleep. An interrupted update may make the device unusable.</p><p><b>Supervised test devices only.</b> Not yet approved for general centre use.</p></div>
-<div class="workspace">
-<section class="panel operations">
-<h2>Device preparation</h2>
-<div class="mini-section"><div class="section-head"><h3>Firmware status</h3><button id="reload" class="secondary small">Check again</button></div><pre id="prepared" class="readout" aria-live="polite">Checking approved firmware…</pre></div>
-<div class="mini-section"><h3>Device connection</h3><div class="actions"><button id="connect">Connect i-Sensor</button><button id="preflight" class="secondary" disabled>Run compatibility check</button></div><pre id="device" class="readout" aria-live="polite">Not connected.</pre></div>
-<div class="mini-section install"><h3>Ready to update?</h3><label class="check"><input id="consent" type="checkbox"><span>I understand that disconnecting the device or closing this page during programming could make the i-Sensor unusable.</span></label><button id="flash" class="primary" disabled>START FIRMWARE UPDATE</button><p class="hint">A final confirmation warning will appear before any device memory is erased.</p></div>
-</section>
-<section class="panel monitor"><div class="monitor-head"><h2>Update progress</h2><strong id="pct">0%</strong></div><progress id="progress" value="0" max="100"></progress><p id="phase" aria-live="polite">Waiting for device</p><div class="metrics"><div><small>Elapsed time</small><strong id="elapsed">0m 00s</strong></div><div><small>Connection</small><strong>Direct USB</strong></div></div><div id="safety" class="activewarning" role="alert" hidden>⚠ UPDATE IN PROGRESS — DO NOT CLOSE, REFRESH OR UNPLUG.</div></section>
-</div>
+<div class="warning" role="alert"><strong>⚠ DO NOT DISCONNECT DURING AN UPDATE</strong><span>Allow 25 minutes or longer. Do not unplug the device, close or refresh this page, restart the PC, or allow it to sleep. An interruption could make the device unusable. <b>Supervised test devices only.</b></span></div>
+<section class="panel monitor"><div class="monitor-head"><div><h2>Update progress</h2><p id="phase" aria-live="polite">Waiting for device</p></div><strong id="pct">0%</strong></div><progress id="progress" value="0" max="100"></progress><div class="metrics"><div><small>Elapsed time</small><strong id="elapsed">0m 00s</strong></div><div><small>Connection</small><strong>Direct USB</strong></div><div><small>Important</small><strong>Keep this page open</strong></div></div><div id="safety" class="activewarning" role="alert" hidden>⚠ UPDATE IN PROGRESS — DO NOT CLOSE, REFRESH OR UNPLUG.</div></section>
 <details class="technical"><summary>Technical activity log <span>For troubleshooting</span></summary><div class="technical-inner"><div class="section-head"><p>Logs stay in your browser unless you save them.</p><button id="export" class="secondary small">Save log</button></div><pre id="log" class="log" aria-live="off"></pre></div></details>
-<footer>F1 Autocentres · i-Sensor maintenance · No centre or employee information sent to the updater server.</footer>
-</main>
-<script src="./updater.js" defer></script>
-</body></html>
+<footer>F1 Autocentres · i-Sensor maintenance · No centre or employee information sent to the updater server.</footer></main><script src="./updater.js" defer></script></body></html>
